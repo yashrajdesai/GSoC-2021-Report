@@ -23,3 +23,15 @@ The project mainly focuses on enhancing the Search and Advanced search features 
 | 7 | Input flexibility enhancements |Users will have the flexibility to search with both UTF-8 and ASCII characters |[#597](https://gitlab.com/cdli/framework/-/issues/597)|[!375](https://gitlab.com/cdli/framework/-/merge_requests/375) |:heavy_check_mark: |
 | 8 | Filter search results by RTI Image, Transliterations , 3D Data | Users can apply filters such as RTI Image, Transliterations, 3D Data and get search results | [#136](https://gitlab.com/cdli/framework/-/issues/136) | [!369](https://gitlab.com/cdli/framework/-/merge_requests/369) |:heavy_check_mark: |
 
+## Preview of objectives
+
+### 1. Keywords search
+
+<center>
+
+      | Keyword's search |
+      | :---:	|
+      | <img src="assets/gifs/keywords.gif" width="800" height="450"> |
+      | Search in keywords search field |
+
+</center>
