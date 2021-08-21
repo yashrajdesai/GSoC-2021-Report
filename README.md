@@ -26,7 +26,8 @@ The project mainly focuses on enhancing the Search and Advanced search features 
 ## Preview of objectives
 
 ### 1. Keywords search
-
+  - *Final outcome:*\
+      Keywords search field can internally query all the fields of the database and return results accordingly. 
 <center>
 
 | Keyword's search |
@@ -37,18 +38,19 @@ The project mainly focuses on enhancing the Search and Advanced search features 
 </center>
 
 ### 2. Fuzzy Id's search
-
+ - *Final outcome:*
+  
 <center>
 
 | Fuzzy Id's search |
 | :---:	|
 | <img src="assets/gifs/fuzzy-ids.gif" width="800" height="450"> |
-| Search yields results even for improper input format for Museum Id in Id's search |
+| Search yields results even for improper input format "A1169" for Museum Id "OIM A01169" in Id's search |
 
 </center>
 
 ### 3. Highlight inscriptions
-
+The text in inscription field of search result was processed
 <center>
 
 | Highlight inscriptions |
