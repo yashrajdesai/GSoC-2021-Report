@@ -29,9 +29,77 @@ The project mainly focuses on enhancing the Search and Advanced search features 
 
 <center>
 
-      | Keyword's search |
-      | :---:	|
-      | <img src="assets/gifs/keywords.gif" width="800" height="450"> |
-      | Search in keywords search field |
+| Keyword's search |
+| :---:	|
+| <img src="assets/gifs/keywords.gif" width="800" height="450"> |
+| Search in keywords search field |
 
 </center>
+
+### 2. Fuzzy Id's search
+
+<center>
+
+| Fuzzy Id's search |
+| :---:	|
+| <img src="assets/gifs/fuzzy-ids.gif" width="800" height="450"> |
+| Search yields results even for improper input format for Museum Id in Id's search |
+
+</center>
+
+### 3. Highlight inscriptions
+
+<center>
+
+| Highlight inscriptions |
+| :---:	|
+| <img src="assets/gifs/highlight-inscriptions.gif" width="800" height="450"> |
+| Highlights the inscription input in search results |
+
+</center>
+
+### 4. Sign Value permutation
+
+<center>
+
+| Sign Value permutation |
+| :---:	|
+| <img src="assets/gifs/sign-permutation.gif" width="800" height="450"> |
+| All possible sign-readings of input sign-values can be searched. |
+
+</center>
+
+### 5. Search Settings
+
+<center>
+
+| Search Settings |
+| :---:	|
+| <img src="assets/gifs/search-settings.gif" width="800" height="450"> |
+| Save and update search settings |
+
+</center>
+
+### 6. Input flexibility enhancements
+
+<center>
+
+| Input flexibility enhancements |
+| :---:	|
+| <img src="assets/gifs/input-flexibility.gif" width="800" height="450"> |
+| flexibility to search with both UTF-8 and ASCII characters |
+
+</center>
+
+### 7. Images and Transliteration Filter
+
+<center>
+
+| Images and Transliteration Filter |
+| :---:	|
+| <img src="assets/gifs/images-filter.gif" width="800" height="450"> |
+| Search results can be filtered w.r.t to Images and Transliteration |
+
+</center>
+
+
