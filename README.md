@@ -10,6 +10,12 @@
 
 The project mainly focuses on enhancing the Search and Advanced search features in the CDLI framework and adding new features to it using [Elasticsearch](https://www.elastic.co/elasticsearch/) and [CakePHP](https://cakephp.org/).
 
+<i>Proposal</i> : [Discovery search and advanced search features](https://docs.google.com/document/d/1WEeNnALSUN4yecCbYxuDyMNUMOzkGcev6Dss4XuNydc/edit#)\
+<i>Contributions to CDLI</i> : [Merge Requests](https://gitlab.com/cdli/framework/-/merge_requests?scope=all&state=all&author_username=yashrajdesai30)\
+<i>Weekly Blogs</i> : [Blog](https://cdli-gh.github.io/blog/gsoc21/discoverSearchAndAdvancedSearchFeatures/index)
+
+Mentor : [Vedant Wakalkar](https://www.linkedin.com/in/karna98/)
+
 ### Objectives and Deliverables
 
 | \# | Objectives                    | Associated Deliverables         | issue(s) | Pull Requests |    Status |
@@ -28,21 +34,21 @@ The project mainly focuses on enhancing the Search and Advanced search features 
 ### 1. Keywords search
   - *Final outcome:*\
       Keywords search field can internally query all the fields of the database and return results accordingly.
-  - *Methodology*\
-      Used Elasticsearch query DSL format in backend.
+  - *Methodology:*
+      * Used Elasticsearch query DSL format in backend.
 <center>
 
 | Keyword's search |
 | :---:	|
 | <img src="assets/gifs/keywords.gif" width="800" height="450"> |
-| Search in keywords search field |
+| Search results for "Vorderasiatisches Museum" in Keyword's field. |
 
 </center>
 
 ### 2. Fuzzy Id's search
  - *Final outcome:*\
     Id's Search should yield results even if input query is not in exact format.
- - *Methodology*
+ - *Methodology:*
      * Processed the input query by applying regex operations before performing search.  
 <center>
 
@@ -57,7 +63,7 @@ The project mainly focuses on enhancing the Search and Advanced search features 
 
 - *Final outcome:*\
    Highlight the inscription input in search results.
-- *Methodology*
+- *Methodology:*
     * The text in the inscription field of each search result was processed using regex so that it can highlight the input query. 
 
 <center>
@@ -73,7 +79,7 @@ The project mainly focuses on enhancing the Search and Advanced search features 
 
 - *Final outcome:*\
    Search results of all possible sign-readings of input sign-values are returned.
-- *Methodology*
+- *Methodology:*
    * Sign names field was added and populated in database.
    * Containerised jtf-lib library in docker to make requests and get response in the framework.
    * Input query was converted to sign-names using jtf-lib and these sign-names along with sign-values are used to perform the search. 
@@ -91,7 +97,7 @@ The project mainly focuses on enhancing the Search and Advanced search features 
 
 - *Final outcome:*\
    Search settings can be saved in session and search results will be displayed accordingly. 
-- *Methodology*
+- *Methodology:*
    * Used cakePHP sessions to store the search settings and applied it on the search results.
 
 
@@ -100,7 +106,7 @@ The project mainly focuses on enhancing the Search and Advanced search features 
 | Search Settings |
 | :---:	|
 | <img src="assets/gifs/search-settings.gif" width="800" height="450"> |
-| Save and update search settings |
+| Removed "Museum collections" and "Period" from search results by modifing Search Settings.  |
 
 </center>
 
@@ -108,7 +114,7 @@ The project mainly focuses on enhancing the Search and Advanced search features 
 
 - *Final outcome:*\
    Users can search with both UTF-8 and ASCII characters
-- *Methodology*
+- *Methodology:*
    * Used UTF8 to ASCII mapping for converting the input into ASCII before performing search.
 
 <center>
@@ -116,7 +122,7 @@ The project mainly focuses on enhancing the Search and Advanced search features 
 | Input flexibility enhancements |
 | :---:	|
 | <img src="assets/gifs/input-flexibility.gif" width="800" height="450"> |
-| flexibility to search with both UTF-8 and ASCII characters |
+| UTF-8 input "diš2" yields search results for ASCII format "disz2" |
 
 </center>
 
@@ -124,7 +130,7 @@ The project mainly focuses on enhancing the Search and Advanced search features 
 
 - *Final outcome:*\
    Search results can be filtered w.r.t to Images and Transliteration according to the access of the user.
-- *Methodology*
+- *Methodology:*
    * Created new index for "Images" table.
    * Added elasticsearch queries which would filter results according to the access.
 
@@ -137,4 +143,7 @@ The project mainly focuses on enhancing the Search and Advanced search features 
 
 </center>
 
+## To Do (Post GSoC)
 
+* Robust Testing of all newly added features.
+* Documentation (User's and Developer's)
