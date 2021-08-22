@@ -27,7 +27,9 @@ The project mainly focuses on enhancing the Search and Advanced search features 
 
 ### 1. Keywords search
   - *Final outcome:*\
-      Keywords search field can internally query all the fields of the database and return results accordingly. 
+      Keywords search field can internally query all the fields of the database and return results accordingly.
+  - *Methodology*\
+      Used Elasticsearch query DSL format in backend.
 <center>
 
 | Keyword's search |
@@ -38,8 +40,10 @@ The project mainly focuses on enhancing the Search and Advanced search features 
 </center>
 
 ### 2. Fuzzy Id's search
- - *Final outcome:*
-  
+ - *Final outcome:*\
+    Id's Search should yield results even if input query is not in exact format.
+ - *Methodology*
+     * Processed the input query by applying regex operations before performing search.  
 <center>
 
 | Fuzzy Id's search |
@@ -50,28 +54,46 @@ The project mainly focuses on enhancing the Search and Advanced search features 
 </center>
 
 ### 3. Highlight inscriptions
-The text in inscription field of search result was processed
+
+- *Final outcome:*\
+   Highlight the inscription input in search results.
+- *Methodology*
+    * The text in the inscription field of each search result was processed using regex so that it can highlight the input query. 
+
 <center>
 
 | Highlight inscriptions |
 | :---:	|
 | <img src="assets/gifs/highlight-inscriptions.gif" width="800" height="450"> |
-| Highlights the inscription input in search results |
+| Highlights the inscription input "muk" in search results |
 
 </center>
 
 ### 4. Sign Value permutation
+
+- *Final outcome:*\
+   Search results of all possible sign-readings of input sign-values are returned.
+- *Methodology*
+   * Sign names field was added and populated in database.
+   * Containerised jtf-lib library in docker to make requests and get response in the framework.
+   * Input query was converted to sign-names using jtf-lib and these sign-names along with sign-values are used to perform the search. 
 
 <center>
 
 | Sign Value permutation |
 | :---:	|
 | <img src="assets/gifs/sign-permutation.gif" width="800" height="450"> |
-| All possible sign-readings of input sign-values can be searched. |
+| All possible sign-readings of input "muk" can be searched with sign-name "MUG". |
 
 </center>
 
 ### 5. Search Settings
+
+- *Final outcome:*\
+   Search settings can be saved in session and search results will be displayed accordingly. 
+- *Methodology*
+   * Used cakePHP sessions to store the search settings and applied it on the search results.
+
 
 <center>
 
@@ -84,6 +106,11 @@ The text in inscription field of search result was processed
 
 ### 6. Input flexibility enhancements
 
+- *Final outcome:*\
+   Users can search with both UTF-8 and ASCII characters
+- *Methodology*
+   * Used UTF8 to ASCII mapping for converting the input into ASCII before performing search.
+
 <center>
 
 | Input flexibility enhancements |
@@ -95,12 +122,18 @@ The text in inscription field of search result was processed
 
 ### 7. Images and Transliteration Filter
 
+- *Final outcome:*\
+   Search results can be filtered w.r.t to Images and Transliteration according to the access of the user.
+- *Methodology*
+   * Created new index for "Images" table.
+   * Added elasticsearch queries which would filter results according to the access.
+
 <center>
 
 | Images and Transliteration Filter |
 | :---:	|
 | <img src="assets/gifs/images-filter.gif" width="800" height="450"> |
-| Search results can be filtered w.r.t to Images and Transliteration |
+| Search results filtered having image type as "photo". |
 
 </center>
 
