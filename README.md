@@ -147,3 +147,7 @@ Mentor : [Vedant Wakalkar](https://www.linkedin.com/in/karna98/)
 
 * Robust Testing of all newly added features.
 * Documentation (User's and Developer's)
+
+## Acknowledgements
+
+Participating in GSoC was a great learning curve for me, I faced alot of challenges in this journey which helped me in learning new skills. I would like to thank my mentors [Vedant Wakalkar](https://www.linkedin.com/in/karna98/) and [Émilie](https://www.linkedin.com/in/epageperron/) for guiding me and helping me throughout my GSoC journey. I shall always be indebted to such a welcoming organisation to help me enhance my coding skills.
